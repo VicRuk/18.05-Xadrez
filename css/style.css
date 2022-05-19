@@ -14,7 +14,7 @@ body{
     flex-wrap: wrap;
     box-shadow: 0 8px 8px rgb(0 0 0 / 65%);
     background: #F0D9B5;
-    z-index: -1;
+    z-index: -2;
 }
 
 .preta {
@@ -31,187 +31,291 @@ body{
 }
 
 .cavalo{
+    position: relative;
     width: 50px;
     height: 50px;
-    padding-top: 5px;
-    padding-left: 65px;
+    top: 5px;
+    left: 65px;
     animation: L 13s ease;
 }
 
+#quadrado{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgb(91, 209, 91);
+    left: 69px;
+    top: 9px;
+    z-index: -1;
+    opacity: 0%;
+    animation: destaque 13s;
+}
     /*
     Cada bloco é 60px X 60px
     */
 @keyframes L{
     0%{
-        padding-top: 5px;
-        padding-left: 65px;
+        top: 5px;
+        left: 65px;
     }
 
 
     4%{
-        padding-top: 65px;
-        padding-left: 65px;
+        top: 65px;
+        left: 65px;
     }
     8%{
-        padding-top: 125px;
-        padding-left: 65px;
+        top: 125px;
+        left: 65px;
     }
     12%{
-        padding-top: 125px;
-        padding-left: 125px;
+        top: 125px;
+        left: 125px;
     }
     16%{
-        padding-top: 125px;
-        padding-left: 125px;
-        color: red;
+        top: 125px;
+        left: 125px;
     }
 
 
     20%{
-        padding-top: 185px;
-        padding-left: 125px;
+        top: 185px;
+        left: 125px;
     }
     24%{
-        padding-top: 245px;
-        padding-left: 125px;
+        top: 245px;
+        left: 125px;
     }
     28%{
-        padding-top: 245px;
-        padding-left: 65px;
+        top: 245px;
+        left: 65px;
     }
     32%{
-        padding-top: 245px;
-        padding-left: 65px;
+        top: 245px;
+        left: 65px;
     }
 
 
     36%{
-        padding-top: 305px;
-        padding-left: 65px;
+        top: 305px;
+        left: 65px;
     }
     40%{
-        padding-top: 365px;
-        padding-left: 65px;
+        top: 365px;
+        left: 65px;
     }
     44%{
-        padding-top: 365px;
-        padding-left: 5px;
+        top: 365px;
+        left: 5px;
     }
     48%{
-        padding-top: 365px;
-        padding-left: 5px;
+        top: 365px;
+        left: 5px;
     }
 
     
     52%{
-        padding-top: 365px;
-        padding-left: 65px;
+        top: 365px;
+        left: 65px;
     }
     56%{
-        padding-top: 365px;
-        padding-left: 125px;
+        top: 365px;
+        left: 125px;
     }
     60%{
-        padding-top: 305px;
-        padding-left: 125px;
+        top: 305px;
+        left: 125px;
     }
     64%{
-        padding-top: 305px;
-        padding-left: 125px;
+        top: 305px;
+        left: 125px;
     }
 
 
     68%{
-        padding-top: 365px;
-        padding-left: 125px;
+        top: 365px;
+        left: 125px;
     }
     72%{
-        padding-top: 425px;
-        padding-left: 125px;
+        top: 425px;
+        left: 125px;
     }
     76%{
-        padding-top: 425px;
-        padding-left: 65px;
+        top: 425px;
+        left: 65px;
     }
     80%{
-        padding-top: 425px;
-        padding-left: 65px;
+        top: 425px;
+        left: 65px;
     }
 
     /*
     Volta
     */
     81%{ 
-        padding-top: 425px;
-        padding-left: 125px;
+        top: 425px;
+        left: 125px;
     }
     82%{
-        padding-top: 365px;
-        padding-left: 125px;
+        top: 365px;
+        left: 125px;
     }
     83%{
-        padding-top: 305px;
-        padding-left: 125px;
+        top: 305px;
+        left: 125px;
     }
 
 
     84%{
-        padding-top: 365px;
-        padding-left: 125px;
+        top: 365px;
+        left: 125px;
     }
     85%{
-        padding-top: 365px;
-        padding-left: 65px;
+        top: 365px;
+        left: 65px;
     }
     86%{
-        padding-top: 365px;
-        padding-left: 5px;
+        top: 365px;
+        left: 5px;
     }
 
 
     87%{
-        padding-top: 365px;
-        padding-left: 65px;
+        top: 365px;
+        left: 65px;
     }
     88%{
-        padding-top: 305px;
-        padding-left: 65px;
+        top: 305px;
+        left: 65px;
     }
     89%{
-        padding-top: 245px;
-        padding-left: 65px;
+        top: 245px;
+        left: 65px;
     }
 
 
     90%{
-        padding-top: 245px;
-        padding-left: 125px;
+        top: 245px;
+        left: 125px;
     }
     91%{
-        padding-top: 185px;
-        padding-left: 125px;
+        top: 185px;
+        left: 125px;
     }
     92%{
-        padding-top: 125px;
-        padding-left: 125px;
+        top: 125px;
+        left: 125px;
     }
 
 
     94%{
-        padding-top: 125px;
-        padding-left: 65px;
+        top: 125px;
+        left: 65px;
     }
     96%{
-        padding-top: 65px;
-        padding-left: 65px;
+        top: 65px;
+        left: 65px;
     }
     98%{
-        padding-top: 5px;
-        padding-left: 65px;
+        top: 5px;
+        left: 65px;
     }
     100%{
-        padding-top: 5px;
-        padding-left: 65px;
+        top: 5px;
+        left: 65px;
     }
-    
+}
+
+@keyframes destaque{
+    0%{
+        top: 9px;
+        left: 69px;
+        opacity: 0%;
+        background: red;
+    }
+    12%{
+        top: 129px;
+        left: 129px;
+        opacity: 0%;
+    }
+    16%{
+        top: 129px;
+        left: 129px;
+        opacity: 100%;
+    }
+    17%{
+        top: 129px;
+        left: 129px;
+        opacity: 0;
+    }
+
+
+    28%{
+        top: 249px;
+        left: 69px;
+        opacity: 0%;
+    }
+    32%{
+        top: 249px;
+        left: 69px;
+        opacity: 100%;
+    }
+    33%{
+        top: 249px;
+        left: 69px;
+        opacity: 0%;
+    }
+
+
+    44%{
+        top: 369px;
+        left: 9px;
+        opacity: 0%;
+    }
+    48%{
+        top: 369px;
+        left: 9px;
+        opacity: 100%;
+    }
+    49%{
+        top: 369px;
+        left: 9px;
+        opacity: 0%;
+    }
+
+
+    60%{
+        top: 309px;
+        left: 129px;
+        opacity: 0%;
+    }
+    64%{
+        top: 309px;
+        left: 129px;
+        opacity: 100%;
+    }
+    65%{
+        top: 309px;
+        left: 129px;
+        opacity: 0%;
+        background: red;
+    }
+
+
+    76%{
+        top: 429px;
+        left: 69px;
+        opacity: 0%;
+        background: rgb(91, 209, 91);
+    }
+    80%{
+        top: 429px;
+        left: 69px;
+        opacity: 100%;
+    }
+    80.5%{
+        top: 429px;
+        left: 69px;
+        opacity: 0%;
+    }
 }
